@@ -352,7 +352,7 @@ bool LoopClosing::ComputeSim3()
     vbDiscarded.resize(nInitialCandidates);
 
     int nCandidates=0; //candidates with enough matches
-    // 1.遍历候选关键帧，对每一个候选关键帧和当前关键帧之间匹配的特征点进行sim3求解。
+    // 1.遍历候选关键帧，对每一个候选关键帧和当前关键帧之间匹配的特征点进行sim3求解
     for(int i=0; i<nInitialCandidates; i++)
     {
         KeyFrame* pKF = mvpEnoughConsistentCandidates[i];
